@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Lebenslauf - Olena Danilets</title>
+    <style>
+      @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.2); }
+        100% { transform: scale(1); }
+      }
+      
+      body {
+        background-color: #8e7d7a;
+        font-family: 'Montserrat', sans-serif;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+      }
+      .wrapper {
+        max-width: 900px;
+        margin: 0 auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .main-content {
+        flex: 2;
+        padding: 20px;
+        position: relative;
+      }
+      .skills-languages {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+      .skills-languages .info-box {
+        flex: 1;
+        padding: 10px;
+        background: #f4f4f4;
+        border-radius: 10px;
+      }
+      .sidebar {
+        flex: 1;
+        background: #c8ccb4c0;
+        color: #1a1818;
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .sidebar a {
+        color: #131212;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      h1, h2, h3 {
+        color: #000;
+      }
+      .contacts-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+      }
+      .contacts-item span {
+        display: inline-block;
+        animation: pulse 1.5s infinite;
+      }
+      .my-photo {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 10px auto;
+      }
+      .contacts-container {
+        text-align: center;
+      }
+      @media (max-width: 768px) {
+        .wrapper {
+          flex-direction: column;
+          padding: 10px;
+        }
+        .main-content, .sidebar {
+          width: 100%;
+          padding: 15px;
+        }
+        .skills-languages {
+          flex-direction: column;
+        }
+        h1 {
+          font-size: 22px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="main-content">
+        <div class="about-me-container">
+          <h2 class="my-profession">Lebenslauf</h2>
+          <h1 class="my-name">Olena Danilets</h1>
+          <p class="my-descr">
+            Ich bin eine engagierte und lernbereite Person mit guten Kenntnissen in MS Office 
+            und schneller Informationsverarbeitung. Ich bin zuverlässig, teamfähig und flexibel.
+            Meine schnelle Auffassungsgabe und meine Neugier motivieren mich, stets Neues zu lernen und mich weiterzuentwickeln.
+          </p>
+        </div>
+        <div class="skills-languages">
+          <div class="info-box">
+            <h3>Fähigkeiten</h3>
+            <ul>
+              <li>MS Office (Word, Excel, PowerPoint) - Sehr gut</li>
+              <li>Schnelle Informationsverarbeitung</li>
+              <li>Lernbereitschaft</li>
+              <li>Teamfähigkeit</li>
+              <li>Selbstständigkeit</li>
+              <li>Zuverlässigkeit</li>
+              <li>Flexibilität</li>
+            </ul>
+          </div>
+          <div class="info-box">
+            <h3>Sprachkenntnisse</h3>
+            <ul>
+              <li>Ukrainisch - Muttersprache</li>
+              <li>Russisch - Fließend</li>
+              <li>Deutsch - B2</li>
+              <li>Englisch - A2</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <aside class="sidebar">
+        <img src="myphoto.jpg" alt="My photo" width="170px" class="my-photo" />
+        <div class="contacts-container">
+          <h3>Kontakt</h3>
+          <p class="contacts-item">
+            <span>📞</span>
+            <a href="tel:+4915111520567">+49 151 11520567</a>
+          </p>
+          <p class="contacts-item">
+            <span>✉️</span>
+            <a href="mailto:elenadanilec87@gmail.com">elenadanilec87@gmail.com</a>
+          </p>
+          <p class="contacts-item">
+            <span>📍</span>
+            Am Schulsteig 8, 29559 Wrestedt, Bollensen
+          </p>
+        </div>
+        <div class="education-container">
+          <h3>Bildungsweg</h3>
+          <ul>
+            <li>2010 – 2019: Allgemeine Sekundarschulbildung, Buzka-Sekundarschule</li>
+            <li>2019 – 2021: Vollständige allgemeine mittlere Bildung, Kolleg Wosnessensk</li>
+            <li>2019 – 2022: Juniorspezialist, Kolleg Wosnessensk</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>
